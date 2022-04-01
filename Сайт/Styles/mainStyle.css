@@ -1,0 +1,188 @@
+html{overflow-y:scroll; overflow-x:hidden;}
+html, body{
+    margin:0; 
+    padding:0; 
+    color: #EAEAEA;
+    background-color: #F2F1EE;
+    line-height: 1.6em;    
+}
+
+/*the first part of the header*/
+
+#topbar{
+    padding: 10px 0px; 
+    font-size:16px;
+    color: #ffffff;
+    background-color: #325992;
+    text-align:center;
+}
+
+#topbar ul{
+    margin: auto 0 auto 0;
+    line-height:normal;
+}
+#topbar i a{
+    color: #ffffff;
+}
+
+#topbar i a:hover{
+    color: #F9A765;
+}
+#inline li{
+    margin: 10%;
+}
+#topbar ul li{display:inline-block; margin-right:20px;}
+ /*the first part of the header*/
+
+
+/*the second part of the header*/
+ 
+.header_back_color {
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+    /*  margin-bottom:10px;  */
+    background-color: #111d43;
+    /*   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#040b29', endColorstr='#2e518d');*/
+    background: radial-gradient(bottom, circle farthest-side, #2e518d 0%, #0d183e 70%, #040b29 100%);
+    background: -moz-radial-gradient(bottom, circle farthest-side, #2e518d 0%, #0d183e 70%, #040b29 100%);
+    background: -ms-radial-gradient(bottom, circle farthest-side, #2e518d 0%, #0d183e 70%, #040b29 100%);
+    background: -webkit-radial-gradient(bottom, circle farthest-side, #2e518d 0%, #0d183e 70%, #040b29 100%);
+    background: -o-radial-gradient(bottom, circle, #2e518d 0%, #0d183e 70%, #040b29 100%);
+    font-family: "romulregular", Arial;
+    text-align: center;
+    color: #F2F1EE;
+}
+
+/*header      \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+#head{
+    position: sticky;
+    top: 0;
+    min-height: 2em;
+    z-index: 999;    
+}
+#header_text{
+    word-wrap: normal;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 19px;
+}
+.header_clear{
+    padding: 10px;
+}
+#header{
+    font-size: 18px;
+}
+
+/*Menu*/
+.menu{
+    background-color: #325992;
+    color:#ffffff;
+    min-height: 40px;
+    text-align: center;
+}
+.menu ul{
+    margin: 0;
+    height: auto;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;    
+    margin: 0; 
+}
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+.menu a:hover {
+    background-color: #969aa3;
+  }
+
+@media screen and (max-device-width: 617px) { 
+    .box_menu{
+      display: none;
+      pointer-events: none;
+      }
+    }
+
+/*end style menu*/
+.back_image{
+    background:url('../Images/device3.png');
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    min-height: 600px;
+    background-size: cover;
+    position: relative;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.back_color {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 1;
+  }
+
+.title{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    margin: auto;
+    max-width: 50%;
+}
+.title h2{
+    color: #ffffff;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    font-size: 42px;
+    line-height: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+@media screen and (max-device-width: 830px) {
+    .title{
+        padding-top: 0;
+        margin-top: 0;
+        position: absolute;        
+        right: 5%;
+        margin: auto;
+        max-width: 90%;
+        overflow-wrap: break-word
+    }
+}
+
+@media screen and (max-device-width: 617px) { 
+    .title{
+        top:15%;
+        font-size: 15px;
+    }
+}
+
+
+/*button toTop*/
+.scrollup{
+    display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	overflow:hidden;
+	width:51px;
+	height:51px;
+	border:none;
+	text-indent:100%;
+    background: url('../Images/icon_top1.png') no-repeat;
+    z-index: 999;
+    }
+/*content*/
+.hover_color:hover{
+    color: #FFD600;
+}

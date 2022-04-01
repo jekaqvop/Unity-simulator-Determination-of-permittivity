@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="Styles/mainStyle.css" rel="stylesheet" type="text/css" media="all">
+    <link href="Styles/burgerMenu.css" rel="stylesheet" type="text/css" media="all">
+    <link href="Styles/flex_box_items.css" rel="stylesheet" type="text/css" media="all">
+    <link href="Styles/footer.css" rel="stylesheet" type="text/css" media="all">
+    <link href="Styles/" rel="stylesheet" type="text/css" media="all">
+    <link href="Styles/Frameworks/fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    
+    <title>Диэлектрики</title>
+    <script src="js/Lib/jquery.min.js"></script>
+    <script src="js/Toup.js" type="text/javascript"></script>
+    <script src="js/ImageMagnification.js" type="text/javascript"></script>
+    <script src="js/textToImage.js" type="text/javascript"></script>
+</head>
+<a href="#" class="scrollup">Наверх</a>
+<body>
+  <div id="topbar">        
+    <ul class="inline">
+      <li>+375 (33) 681 0715</li>
+      <li>jekaavhachev@gmail.com</li>
+      <li><i><a href="pages/aboutMe.html">Авхачёв Евгений</a></i></li>
+    </ul>         
+  </div>
+    <div id="head">  
+      <div id="header">
+          <div class="header_back_color" id="header_fix_position">
+              <header class="header_clear">
+                <h2 id="header_text">
+                    ОПРЕДЕЛЕНИЕ ДИЭЛЕКТРИЧЕСКОЙ  
+                    ПРОНИЦАЕМОСТИ ТВЁРДЫХ                    
+                        ДИЭЛЕКТРИКОВ                     
+                </h2>
+              </header>           
+          </div>
+     <div class="box_menu">
+      <nav class="menu">
+        <ul class="clear">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="pages/theory.html">Теория</a></li>
+          <li><a href="pages/aboutLab.html">Структура установки</a></li>
+          <li><a href="pages/index.html">Симулятор</a></li>
+          <li><a href="pages/aboutMe.html">Об авторе</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+      <input id="toggle" type="checkbox">        
+      <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+      
+      <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+      <label class="toggle-container" for="toggle">
+      <!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+      <span class="button button-toggle"></span>
+      </label>      
+      <!-- Навигация -->
+      <nav class="nav">        
+        <a rel="nofollow" rel="noreferrer" class="nav-item" href="index.html">Home</a>
+        <a rel="nofollow" rel="noreferrer" class="nav-item" href="pages/theory.html">Теория</a>
+        <a rel="nofollow" rel="noreferrer" class="nav-item" href="pages/aboutLab.html">Симулятор</a>
+        <a rel="nofollow" rel="noreferrer" class="nav-item" href="pages/index.html">Структура установки</a>
+        <a rel="nofollow" rel="noreferrer" class="nav-item" href="pages/aboutMe.html">Об авторе</a>
+      </nav>
+    </div> 
+  </div>
+</div>
+    <div class="back_image">
+      <div class="back_color">    
+          <div class="title">          
+                <h2>ИЗМЕРЕНИЕ 
+                    ДИЭЛЕКТРИЧЕСКОЙ 
+                    ПРОНИЦАЕМОСТИ 
+                    ТВЁРДЫХ 
+                    <span id="t1" onmousedown="toim('Images/dielectrics.jpg')" onmouseout="totext('ДИЭЛЕКТРИКОВ')">
+                      <span>
+                        ДИЭЛЕКТРИКОВ
+                      </span>
+                    </span>
+                </h2> 
+          </div>
+        </div>
+    </div>   
+    <div class="elements">
+      <div class="flex_box">
+        <div>
+          <a href="#img1">
+            <img src="Images/Elements_Device/Katushka_induktivnosti_1.jpg">
+          </a>
+          <a href="#" class="lightbox" id="img1">
+            <span style="background-image: url('Images/Elements_Device/Katushka_induktivnosti_1.jpg')"></span>
+          </a>
+          <p>
+            <span class="hover_color">Катушка индукти́вности</span> — винтовая, спиральная или винтоспиральная катушка из свёрнутого изолированного проводника, обладающая значительной индуктивностью при относительно малой ёмкости и малом активном сопротивлении.
+          </p>
+        </div>
+        <div>
+          <a href="#img2">
+            <img src="Images/Elements_Device/dielektriki-materialy_0.jpg">
+          </a>
+          <a href="#" class="lightbox" id="img2">
+            <span style="background-image: url('IImages/Elements_Device/dielektriki-materialy_0.jpg')"></span>
+          </a>
+          <p>
+            <span class="hover_color">Диэлектрик</span> - это материал или вещество, которое практически не пропускает электрический ток. Такая проводимость получается вследствие небольшого количества электронов и ионов.
+          </p>
+        </div>
+        <div>
+          <a href="#img3">
+            <img src="Images/Elements_Device/Capacitor_principle_sketch.png">
+          </a>
+          <a href="#" class="lightbox" id="img3">
+            <span style="background-image: url('Images/Elements_Device/Capacitor_principle_sketch.png')"></span>
+          </a>
+          <p>
+            В простейшем варианте конструкция <span class="hover_color">Конденсатора</span>  состоит из двух электродов в форме пластин (называемых обкладками), разделённых диэлектриком, толщина которого мала по сравнению с размерами обкладок
+          </p>
+        </div>    
+        <div>
+          <a href="#img4">
+            <img src="Images/device3.png">
+          </a>
+          <a href="#" class="lightbox" id="img4">
+            <span style="background-image: url('Images/device3.png')"></span>
+          </a>
+          <p>
+            <span class="hover_color">Измеритель добротности (Q-метр, куметр)</span> — радиоизмерительный прибор для определения добротности элементов электрических цепей.
+          </p>
+        </div>
+        <div>
+          <a href="#img5">
+            <img src="Images/Elements_Device/FrequencyGenerator.jpg">
+          </a>
+          <a href="#" class="lightbox" id="img5">
+            <span style="background-image: url('Images/Elements_Device/FrequencyGenerator.jpg')"></span>
+          </a>
+          <p>
+            <span class="hover_color">Генератор сигналов</span> — это устройство, позволяющее производить сигнал определённой природы, имеющий заданные характеристики. 
+          </p>
+        </div>
+        <div>
+          <a href="#img6">
+            <img src="Images/Elements_Device/Механизм.JPG">
+          </a>
+          <a href="#" class="lightbox" id="img6">
+            <span style="background-image: url('Images/Elements_Device/Механизм.JPG')"></span>
+          </a>
+          <p>
+            <span class="hover_color">
+              Устройство</span>, позволяющее изменять расстояние между электродами и измерять его.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <footer id="footer">
+        <div id="cta" class="group">
+          <div id="first" class="one_third">
+            <img src="Images/icons/marker.png"/>
+            <div> 
+              <p><span id="t2" onmousedown="toimMap()" onmouseout="totextMap()"> Find</span> us</p>
+              <p>Belarus, Minsk, BSTU</p>
+            </div>           
+          </div>
+          <div class="one_third">
+            <img src="Images/icons/phone.png"/>
+            <div>
+              <p>Call us</p>
+              <p>+375 (33) 681 0715</p>
+            </div>           
+          </div>
+          <div class="one_third">
+            <img src="Images/icons/mail.png"/>
+            <div>
+              <p>Email us</p>
+              <p>jekaavhachev@gmail.com</p>
+            </div>            
+          </div>
+        </div>        
+      </footer>
+    </div>
+    
+</body>
+</html>

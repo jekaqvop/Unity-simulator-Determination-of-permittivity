@@ -1,0 +1,23 @@
+.main_content{
+    color: #000000;
+    display: table;
+    content: "";
+    box-sizing: border-box;
+    clear: both;
+    color: rgb(74, 74, 74);
+    display: block;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    line-height: 22.4px;
+    overflow-wrap: break-word;
+    padding-bottom: 80px;
+    padding: 10%;
+    text-align: left;
+    line-height: normal;
+    font-weight: normal;
+    transition-timing-function: ease-in-out
+}
+
+.main_content p img{
+    max-width: 100%;
+}

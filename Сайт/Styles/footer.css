@@ -1,0 +1,85 @@
+.wrapper {
+	min-height: 100%;
+    background-color: #111d43;
+    /*   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#040b29', endColorstr='#2e518d');*/
+    background: radial-gradient(bottom, circle farthest-side, #2e518d 0%, #0d183e 70%, #040b29 100%);
+    background: -moz-radial-gradient(bottom, circle farthest-side, #2e518d 0%, #0d183e 70%, #040b29 100%);
+    background: -ms-radial-gradient(bottom, circle farthest-side, #2e518d 0%, #0d183e 70%, #040b29 100%);
+    background: -webkit-radial-gradient(bottom, circle farthest-side, #2e518d 0%, #0d183e 70%, #040b29 100%);
+    background: -o-radial-gradient(bottom, circle, #2e518d 0%, #0d183e 70%, #040b29 100%);
+    font-family: "romulregular", Arial;
+    text-align: center;
+    color: #F2F1EE;   
+    display:block; 
+    width:100%; 
+    margin:0; 
+    padding:0; 
+    text-align:left; 
+    word-wrap:break-word;
+}
+#cta{
+    padding:20pt; 
+    border-radius:0 0 5px 5px;
+}
+#first:first-child{
+    padding-left: 0;
+}
+#cta div {
+    position:relative; 
+    min-height:40px; 
+}
+
+#cta div:last-child{
+    margin-bottom:0;
+}/* Used in small devices when elements stack */
+#cta p{
+    margin:0; 
+    padding:0;
+}
+
+#cta div p:first-of-type{
+    font-weight:700; 
+    text-transform:uppercase;
+}
+
+#cta{
+    display:flex;     
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.one_third{
+    min-width: 17%;
+    display:flex;     
+    
+}
+.one_third div p{
+    white-space: nowrap;
+}
+.group div img{
+    height: 44px;
+    margin: auto 0 auto auto;
+    background-color: #F2F1EE;
+}
+
+.one_third div{
+    margin-left: 10%;
+}
+
+@media screen and (max-device-width: 661px)  {
+    .group div img{        
+        margin: auto 0 auto 0;      
+    }
+    .one_third{
+        padding: 0;
+        margin: 0;
+        justify-content: left;
+        min-width: 230px;
+    }
+    #cta{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        padding: auto;        
+    }
+}

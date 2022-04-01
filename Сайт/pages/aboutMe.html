@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="../Styles/mainStyle.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../Styles/burgerMenu.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../Styles/flex_box_items.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../Styles/footer.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../Styles/aboutMe.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../Styles/Frameworks/fontawesome-4.5.0.min.css" rel="stylesheet" type="text/css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Диэлектрики</title>
+    <script src="../js/Lib/jquery.min.js"></script>
+    <script src="../js/Toup.js" type="text/javascript"></script>
+    <script src="../js/textToImage.js" type="text/javascript"></script>
+  
+</head>
+<a href="#" class="scrollup">Наверх</a>
+<body>
+  <div id="topbar">        
+    <ul class="inline">
+      <li>+375 (33) 681 0715</li>
+      <li>jekaavhachev@gmail.com</li>
+      <li><i><a href="../pages/aboutMe.html">Авхачёв Евгений</a></i></li>
+    </ul>         
+  </div>
+    <div id="head">  
+      <div class="header">
+          <div class="header_back_color" id="header_fix_position">
+              <header class="header_clear">
+                <h2>ИЗМЕРЕНИЕ 
+                  ДИЭЛЕКТРИЧЕСКОЙ 
+                  ПРОНИЦАЕМОСТИ 
+                  ТВЁРДЫХ 
+                 
+                      ДИЭЛЕКТРИКОВ
+                   
+              </h2> 
+              </header>           
+          </div>
+     <div class="box_menu">
+      <nav class="menu">
+        <ul class="clear">
+          <li class="active"><a href="../index.html">Home</a></li>
+          <li><a href="theory.html">Теория</a></li>
+          <li><a href="aboutLab.html">Структура установки</a></li>
+          <li><a href="index.html">Симулятор</a></li>
+          <li><a href="aboutMe.html">Об авторе</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <!-- Этот чекбокс даст нам поведение переключателя, он будет скрыт, но работать -->
+      <input id="toggle" type="checkbox">        
+      <!-- ВАЖНО: любой элемент, который мы хотим модифицировать при изменении состояния чекбокса, является «братским» элементом для чекбокса -->
+      
+      <!-- Эта метка привязана к чекбоксу и будет содержать переключение «кнопок» -->
+      <label class="toggle-container" for="toggle">
+      <!-- Если меню открыто, то здесь будет иконка «X», в противном случае просто иконка гамбургера -->
+      <span class="button button-toggle"></span>
+      </label>      
+      <!-- Навигация -->
+      <nav class="nav">        
+        <a rel="nofollow" rel="noreferrer" class="nav-item" href="../index.html">Home</a>
+        <a rel="nofollow" rel="noreferrer" class="nav-item" href="theory.html">Теория</a>
+        <a rel="nofollow" rel="noreferrer" class="nav-item" href="aboutLab.html">Симулятор</a>
+        <a rel="nofollow" rel="noreferrer" class="nav-item" href="index.html">Структура установки</a>
+        <a rel="nofollow" rel="noreferrer" class="nav-item" href="aboutMe.html">Об авторе</a>
+      </nav>
+    </div> 
+  </div>
+</div>
+    <div class="back_image">
+      <div class="back_color">    
+          <div class="title">          
+            <h2>ИЗМЕРЕНИЕ 
+              ДИЭЛЕКТРИЧЕСКОЙ 
+              ПРОНИЦАЕМОСТИ 
+              ТВЁРДЫХ 
+              <span id="t1" onmousedown="toim('../Images/dielectrics.jpg')" onmouseout="totext('ДИЭЛЕКТРИКОВ')">
+                <span>
+                  ДИЭЛЕКТРИКОВ
+                </span>
+              </span>
+          </h2>    
+          </div>
+        </div>
+    </div>   
+    <div class="elements">
+     <div class="main_content">
+       <h1>Биография автора</h1>
+       <p>
+         Меня зовут Авхачёв Евгений. Родился в городе Костюковичи в 2001 году. 
+         Учился 2 года на физ-мате. 
+         После окончания 11 класса поступил в БГТУ, который находится в Минске. 
+         Сейчас учусь на 3 курсе специальности 
+         "Информационные системы и технологии" на факультете информационных технологий. 
+        </p>
+        <p>
+          Данный сайт подготовил для сдачи курсового проекта по дисциплине 
+          Компьютерные мультимедийные системы в издательском деле.
+        </p>
+        <p>
+          <img src="../Images/aboutMe/MyPhoto.jpg"/>
+        </p>
+     </div>
+    </div>
+    <div class="wrapper">
+      <footer id="footer">
+        <div id="cta" class="group">
+          <div id="first" class="one_third">
+            <img src="../Images/icons/marker.png"/>
+            <div> 
+              <p>Find us</p>
+              <p>Belarus, Minsk, BSTU</p>
+            </div>           
+          </div>
+          <div class="one_third">
+            <img src="../Images/icons/phone.png"/>
+            <div>
+              <p>Call us</p>
+              <p>+375 (33) 681 0715</p>
+            </div>           
+          </div>
+          <div class="one_third">
+            <img src="../Images/icons/mail.png"/>
+            <div>
+              <p>Email us</p>
+              <p>jekaavhachev@gmail.com</p>
+            </div>            
+          </div>
+        </div>
+      </footer>
+    </div>
+</body>
+</html>

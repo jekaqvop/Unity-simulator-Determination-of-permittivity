@@ -1,0 +1,83 @@
+.elements{
+    align-items: center;
+    padding: 0.8%;
+    background: -webkit-linear-gradient(top, #1b3d76 0%,#224375 25%,#305584 40%,#39628e 55%,#45719a 70%, #5f93b6 100%);
+}
+
+.flex_box{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap: wrap;
+    max-width: 1150px;
+    margin:0 auto;
+    background-color: #F2F1EE;
+}
+.main_content{   
+    max-width: 1100px;
+    margin:0 auto;
+    background-color: #F2F1EE;
+}
+
+.flex_box div{
+    background-color:#E8E8E8;
+    height: 410px;    
+    width: 300px;    
+    margin: 3%;
+}
+
+.flex_box div a img{
+    width: 80%;
+    height: 50%;
+    margin: 5% 10% 1% 10%; 
+}
+
+.flex_box div p{
+    color: #080808;
+    margin: 0 10% 10% 10%;
+    line-height: 1.2em;   
+}
+
+/*.flex_box div img:hover {
+    transform: scale(1.25); /* Увеличиваем масштаб 
+   }
+*/
+/*////////////////////////////////////////////////*/
+.lightbox {
+    /* Default to hidden */
+    display: none;
+  
+    /* Overlay entire screen */
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* A bit of padding around image */
+    padding: 1em;
+  
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Unhide the lightbox when it's the target */
+  .lightbox:target {
+    display: block;
+  }
+  
+  .lightbox span {
+    /* Full width and height */
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+ 
